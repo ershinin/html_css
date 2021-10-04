@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+</head>
+<body>
+<form action="#" method="#">
+    <div>
+        <label for="email">Введите Ваш e-mail*</label>
+        <input id="email"
+               type="email"
+               placeholder="e-mail"
+               required>
+    </div>
+    <div>
+        <label for="password">Придумайте пароль*</label>
+        <input id="password"
+               type="password"
+               placeholder="Пароль"
+               required
+               minlength="6">
+    </div>
+    <div>
+        <label for="name">Ваше имя</label>
+        <input id="name"
+               type="text"
+               placeholder="Имя">
+    </div>
+    <div>
+        <label for="age">Ваш возраст*</label>
+        <input id="age"
+               type="number"
+               placeholder="Возраст"
+               required
+               min="1"
+               max="120">
+    </div>
+    <div>
+        <label for="phone_number">Контактный телефон</label>
+        <input id="phone_number"
+               type="number"
+               placeholder="Телефон"
+               minlength="11"
+               maxlength="18">
+    </div>
+    <div>
+        <p>* Поля, обязательные для заполнения</p>
+    </div>
+    <input type="submit" value="Зарегистрироваться">
+</form>
+</body>
+</html>
