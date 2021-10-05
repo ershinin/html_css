@@ -1,10 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Подбор квартиры</title>
 </head>
 <body>
+<form action="#" method="#">
+    <div>
+        <label for="place">Введите район, станцию метро или улицу:</label>
+        <input id="place"
+               type="text"
+               name="place"
+               placeholder="район, метро или улица">
+    </div>
+    <div>
+        <label for="room_count">Выберите количество комнат:</label>
+        <select id="room_count" name="room_count">
+            <option value="0">Студия</option>
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5+</option>
+        </select>
+    </div>
+    <div>
+        <label for="year">Выберите год сдачи дома:</label>
+        <input id="year"
+               name="year"
+               type="number"
+               min="1800"
+               max="2021"
+               placeholder="1990">
+    </div>
+    <div>
+        <label for="max_cost">Укажите максимальную стоимость (руб.):</label>
+        <input id="max_cost"
+               name="max_cost"
+               type="number"
+               min="0"
+               value="20000">
+    </div>
+    <div>
+        <label for="area">Укажите максимальную площадь квартиры (м<sup>2</sup>):</label>
+        <input id="area"
+               name="area"
+               type="number"
+               min="0"
+               value="20000">
+    </div>
+    <div>
+        <label>
+            С отделкой
+            <input type="checkbox" name="facing" checked value="facing">
+        </label>
+    </div>
+    <div>
+        <label>
+            С террасой
+            <input type="checkbox" name="facing" checked value="facing">
+        </label>
+    </div>
+    <div>
+        <label>
+            Выберите класс жилья:
+            <div>
+                <label>
+                    <input type="checkbox" name="class[]" value="business">
+                    Бизнес
+                </label>
+                <label>
+                    <input type="checkbox" name="class[]" value="premium">
+                    Премиум
+                </label>
+                <label>
+                    <input type="checkbox" name="class[]" value="deluxe">
+                    Deluxe
+                </label>
+            </div>
+        </label>
+    </div>
+    <div>
+        <label for="floor">Укажите этаж:</label>
+        <div>
+            <label>
+                <input type="checkbox" name="floor[]" value="not_first">
+                Не первый
+            </label>
+            <label>
+                <input type="checkbox" name="floor[]" value="not_last">
+                Не последний
+            </label>
+            <label>
+                <input type="checkbox" name="floor[]" value="not_last">
+                В диапазоне:
+                <label for="floor_from">от</label>
+                <input type="number" id="floor_from" name="floor_from" value="1" min="1">
+                <label for="floor_to">до</label>
+                <input type="number" id="floor_to" name="floor_to" value="25" min="1">
+        </div>
+        </label>
 
+    </div>
+    <input type="submit" value="Подобрать">
+</form>
 </body>
 </html>
