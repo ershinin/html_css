@@ -80,9 +80,9 @@
             </div>
         </label>
     </div>
-    <div>
+     <div>
         <label for="floor">Укажите этаж:</label>
-        <div>
+        <div id="floor">
             <label>
                 <input type="checkbox" name="floor[]" value="not_first">
                 Не первый
@@ -92,15 +92,14 @@
                 Не последний
             </label>
             <label>
-                <input type="checkbox" name="floor[]" value="not_last">
+                <input type="checkbox" name="floor[]" value="range">
                 В диапазоне:
                 <label for="floor_from">от</label>
                 <input type="number" id="floor_from" name="floor_from" value="1" min="1">
                 <label for="floor_to">до</label>
                 <input type="number" id="floor_to" name="floor_to" value="25" min="1">
+            </label>
         </div>
-        </label>
-
     </div>
     <input type="submit" value="Подобрать">
 </form>
