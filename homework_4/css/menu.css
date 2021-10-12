@@ -1,0 +1,27 @@
+@import "flex-grid.css";
+
+.menu {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: space-evenly;
+    line-height: 50px;
+}
+
+.menu a {
+    text-decoration-line: none;
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.active {
+    background-color: mediumpurple;
+}
+
+.horizontal {
+    flex-direction: row;
+}
+
+.vertical {
+    flex-direction: column;
+}
