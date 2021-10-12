@@ -1,0 +1,106 @@
+@import "flex-grid.css";
+
+body {
+    margin: 0;
+}
+
+header, footer {
+    background-color: sienna;
+    color: blanchedalmond;
+}
+
+footer {
+    text-transform: uppercase;
+    height: 50px;
+}
+
+footer p {
+    margin: 0;
+    padding: 0.5rem;
+}
+
+/*Шапка*/
+.header {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+.header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.header a {
+    height: 50px;
+    line-height: 50px;
+}
+
+#brand {
+    text-transform: uppercase;
+}
+
+/*Основное содержание*/
+
+main {
+    padding: 10px;
+}
+
+aside {
+    padding: 5px;
+    background-color: blanchedalmond;
+    color: sienna;
+    text-transform: uppercase;
+}
+
+.gap {
+    gap: 10px;
+}
+
+.item {
+    padding: 5px;
+    background-color: darkgrey;
+    color: sienna;
+    flex: 1 1 auto;
+}
+
+.link {
+    display: block;
+    background-color: sienna;
+    color: blanchedalmond;
+    text-decoration-line: none;
+    line-height: 35px;
+    text-align: center;
+}
+
+.linked {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.img_full_item {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.img_half_item {
+    width: 50%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+#second_row_text {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
