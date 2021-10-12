@@ -39,6 +39,8 @@ footer p {
 .header a {
     height: 50px;
     line-height: 50px;
+    text-decoration-line: none;
+    color: blanchedalmond;
 }
 
 #brand {
