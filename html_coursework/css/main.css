@@ -1,0 +1,245 @@
+@import "flex-grid.css";
+
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p,
+a, img, ol, ul, li,
+form, label, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+footer, header, menu, nav, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.85rem;
+    color: #888;
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.container > header,
+.container > footer {
+    font-size: 1.2rem;
+    margin: 2rem auto;
+}
+
+.wrapper {
+    margin-top: 2rem;
+    padding: 3rem 0 3rem 0;
+    text-align: center;
+}
+
+.wrapper.footer {
+    background-color: #303030;
+    color: #999;
+    text-shadow: -1px -1px 0px #181818;
+}
+
+.box {
+    background: #fff;
+    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 2rem;
+}
+
+.box > img {
+    object-fit: cover;
+    width: auto;
+    height: 160px;
+}
+
+.box h3 {
+    margin-bottom: 0.5rem;
+    color: #2DAAE4;
+}
+
+.button {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
+    background-color: #43B3E0;
+    padding: 1rem 2rem 1rem 2rem;
+    margin-top: 1.5rem;
+}
+
+.button:hover {
+    background-color: #43bff0;
+}
+
+.category {
+    padding-top: 10rem;
+    text-align: left;
+}
+
+.category .image {
+    width: 20rem;
+    height: 20rem;
+    margin: 0;
+}
+
+.category p {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.category h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.image img {
+    display: block;
+    width: 100%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+}
+
+/* Feedback */
+
+form label {
+    color: #3e3e3e;
+    font-weight: 700;
+    display: block;
+    margin: 0 0 0.5rem 0;
+}
+
+form input[type='text'],
+form textarea {
+    display: block;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: solid 1px #ddd;
+    background: #fff;
+    color: #bbb;
+    box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.05), 0px 1px 0px 0px rgba(255, 255, 255, 0.025);
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+form textarea {
+    height: 15rem;
+}
+
+form input[type='submit'] {
+    border: none;
+}
+
+/* Menu */
+
+#nav {
+    background-color: #43B3E0;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    height: 3.5rem;
+    line-height: 3.5rem;
+}
+
+#nav li {
+    display: inline-block;
+    padding-left: 0;
+}
+
+#nav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding: 0 1.25rem;
+}
+
+#nav a:hover {
+    background: #43bff0;
+}
+
+/* Footer */
+
+#copyright li {
+    color: #666;
+    display: inline-block;
+    border-left: solid 1px rgba(0, 0, 0, 0.5);
+    box-shadow: -1px 0px 0px 0px rgba(255, 255, 255, 0.1);
+    padding: 0 0 0 1rem;
+    margin: 0 0 0 1rem;
+}
+
+#copyright li:first-child {
+    border: 0;
+    box-shadow: none;
+}
+
+/* Large */
+
+@media screen and (max-width: 1280px) {
+
+    .container {
+        max-width: 960px;
+    }
+
+    .category {
+        padding-top: 8rem;
+    }
+
+    .category .image {
+        width: 24rem;
+        height: 24rem;
+        margin: 0;
+    }
+}
+
+/* Medium */
+
+@media screen and (max-width: 980px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .category {
+        text-align: center;
+        padding: 5rem 0;
+    }
+
+    .category .image {
+        margin: 0 auto 2rem auto;
+    }
+}
+
+/* Small */
+
+@media screen and (max-width: 736px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .category .image {
+        width: 15rem;
+        height: 15rem;
+        margin-bottom: 0;
+    }
+}
